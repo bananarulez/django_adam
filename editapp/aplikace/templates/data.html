@@ -1,0 +1,49 @@
+
+{% block body %}
+<a href="{% url 'home' %}">home</a>
+ {% if user.is_authenticated %}
+<div class="post-entry">
+<table class='table'>
+    <thead>
+      <tr>
+          <th>edit</th>
+          <th>id</th>
+          <th>instituce</th>
+          <th>fond</th>
+          <th>investarni cislo</th>
+          <th>signatura</th>
+          <th>inkrement</th>
+          <th>karton ulozeni</th>
+          <th>lokalita</th>
+          <th>puv cislo</th>
+          <th>cl</th>
+          <th>obec</th>
+          <th>okres</th>
+
+
+      </tr>
+    </thead>
+   {% for object in object_list %}
+<tr>
+    <td><a href={% url 'data_detail' object.pk %}>editovat</a></td>
+    <td>{{ object.id }}</td>
+    <td>{{ object.instituce }}</td>
+    <td>{{ object.fond }}</td>
+    <td>{{ object.investarni_cislo }}</td>
+    <td>{{ object.signatura }}</td>
+    <td>{{ object.inkrement }}</td>
+    <td>{{ object.karton_ulozeni }}</td>
+    <td>{{ object.lokalita }}</td>
+    <td>{{ object.puv_nazev }}</td>
+    <td>{{ object.cp }}</td>
+    <td>{{ object.obec }}</td>
+    <td>{{ object.okers }}</td>
+
+</tr>
+  {% endfor %}
+</table>
+</div>
+ {% else %}
+<p>you are not logged in
+ {% endif %}
+{% endblock %}

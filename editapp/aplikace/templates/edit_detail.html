@@ -1,0 +1,12 @@
+{% block content %}
+{% if user.is_authenticated %}
+ <h1>Edit object
+  <hr><a href="{% url 'data' %}">edit data</a>
+ <form action="" method="post">{% csrf_token %}
+  {{ form.as_p }}
+ <input type="submit" value="Update" />
+ </form>
+{% else %}
+  <p>you are not logged in
+ {% endif %}
+{% endblock content %}

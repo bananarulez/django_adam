@@ -1,0 +1,28 @@
+
+{% block content %}
+<a href="{% url 'home' %}">home</a>
+ {% if user.is_authenticated %}
+<p>  <a href="{% url 'data' %}">edit data</a>
+<hr>
+<a href="{% url 'edit_detail' object.pk %}">Edit object</a>
+<p><a href="{% url 'data_delete' object.pk %}">delete object</a>
+<p>
+<div class="edit-entry" xmlns="http://www.w3.org/1999/html">
+     <p><b>id:</b> {{ object.id }}
+     <p><b>instituse:</b> {{ object.instituce }}
+     <p><b>fond:</b> {{ object.fond }}
+     <p><b>investarni cislo:</b> {{ object.investarni_cislo }}
+     <p><b>signatura:</b> {{ object.signatura }}
+     <p><b>inkrement:</b> {{ object.inkrement }}
+     <p><b>karton ulozeni:</b> {{ object.karton_ulozeni }}
+     <p><b>lokalita:</b> {{ object.lokalita }}
+     <p><b>puv nazev:</b> {{ object.puv_nazev }}
+     <p><b>cp:</b> {{ object.cp }}
+     <p><b>obec:</b> {{ object.obec }}
+     <p><b>okres:</b> {{ object.okres }}
+ </div>
+
+ {% else %}
+   <p>you are not logged in
+ {% endif %}
+{% endblock content %}

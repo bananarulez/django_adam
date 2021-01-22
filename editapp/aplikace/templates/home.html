@@ -1,0 +1,14 @@
+{% block title %}Home page{% endblock %}
+{% block content %}
+{% if user.is_authenticated %}
+  <div style="text-align:center">Hi {{ user.username }}</div>
+  <p><a href="{% url 'logout' %}">Log out</a></p>
+  <hr><a href="{% url 'show_data' %}">show data</a>
+  <p><a href="{% url 'data' %}">edit data</a>
+  <p><a href="{% url 'data_new' %}">new data</a>
+{% else %}
+  <p>You are not logged in</p>
+  <a href="{% url 'login' %}">login</a>
+  <hr><a href="{% url 'show_data' %}">show data</a>
+{% endif %}
+{% endblock %}
