@@ -2,7 +2,8 @@
 {% if user.is_authenticated %}
  <h1>Edit object
   <hr><a href="{% url 'data' %}">edit data</a>
- <form action="" method="post">{% csrf_token %}
+ <form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
   {{ form.as_p }}
  <input type="submit" value="Update" />
  </form>

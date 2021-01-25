@@ -32,15 +32,17 @@ class NewData(CreateView):
     template_name = 'data_new.html'
     fields = '__all__'
 
-#def upload(request):
-#    if request.method == 'POST':
-#        uploaded_file = request.FILES['document']
-#        fs = FileSystemStorage()
-#        fs.save(uploaded_file.name, uploaded_file)
-#    return render(request, 'upload.html')
+    # def upload(request):
+    #     if request.method == 'POST':
+    #     uploaded_file = request.FILES['document']
+    #     fs = FileSystemStorage()
+    #     fs.save(uploaded_file.name, uploaded_file)
+    # return render(request, 'upload.html')
 
 class DeleteData(DeleteView):
     model = Cvut
     template_name = 'data_delete.html'
     success_url = reverse_lazy('data')
 
+# def ShowImage(request):
+#     return render(request, 'show_image.html')

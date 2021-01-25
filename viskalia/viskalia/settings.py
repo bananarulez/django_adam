@@ -82,7 +82,7 @@ DATABASES = {
         'USER' : 'editapp',
         'PASSWORD' : '20django20',
         'HOST' : 'skansen.fsv.cvut.cz',
-        'PORT' : '3306',       
+        'PORT' : '3306',
     }
 }
 

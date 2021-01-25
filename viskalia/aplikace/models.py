@@ -122,6 +122,8 @@ class Cvut(models.Model):
     gps_sirka = models.FloatField(db_column='GPS_sirka', blank=True, null=True)  # Field name made lowercase.
     gps_delka = models.FloatField(db_column='GPS_delka', blank=True, null=True)  # Field name made lowercase.
     gps_presne = models.IntegerField(db_column='GPS_presne', blank=True, null=True)  # Field name made lowercase.
+    #file = models.CharField(max_length=100, blank=True, null=True)
+    file = models.ImageField(upload_to='images/', blank=True, null=True)
 
     def get_absolute_url(self):
         return reverse('data_detail', kwargs={'pk': self.pk})

@@ -3,13 +3,14 @@
 {% block content %}
 {% if user.is_authenticated %}
  <h1>New post</h1>
- <form action="" method="post">{% csrf_token %}
+ <form action="" method="post" enctype="multipart/form-data">
+  {% csrf_token %}
   {{ form.as_p }}
 <!--  <form methon="post" enctype="multipart/form-data">
    {% csrf_token%}
    <input type="file" name="document">
-   <button type="submit">Upload file</button>
-  </form> -->
+
+  </form>   -->
   <input type="submit" value="Save" />
  </form>
 {% else %}

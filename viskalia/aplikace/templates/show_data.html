@@ -1,4 +1,4 @@
-
+{% load static %}
 {% block body %}
 <a href="{% url 'home' %}">home</a>
 <div class="post-entry">
@@ -17,6 +17,8 @@
           <th>cp</th>
           <th>obec</th>
           <th>okres</th>
+          <th>file</th>
+          <th>file path</th>
 
 
       </tr>
@@ -35,6 +37,10 @@
     <td>{{ object.cp }}</td>
     <td>{{ object.obec }}</td>
     <td>{{ object.okers }}</td>
+    <td><img src="{{ object.file }}"></td>
+    <!--<td><img src="media/images/3.jpg"></td>
+    <td><a href={% url 'data_detail' object.pk %}>editovat</a></td>
+    <td><a href={% url 'home' %}>editovat</a></td> -->
 
 </tr>
 {% endfor %}

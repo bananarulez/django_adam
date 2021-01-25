@@ -1,6 +1,8 @@
 from django.urls import path
 
+
 from .views import HomeView, ShowData, EditData, DataDetail, EditDetail, NewData, DeleteData
+#ShowImage
 
 urlpatterns = [
     path('data/<int:pk>/delete/',DeleteData.as_view(), name='data_delete'),
@@ -9,5 +11,6 @@ urlpatterns = [
     path('data/new/', NewData.as_view(), name='data_new'),
     path('data/', EditData.as_view(), name='data'),
     path('show/', ShowData.as_view(), name='show_data'),
+    # path('/', views.ShowImage, name='show_image'),
     path('', HomeView.as_view(), name = 'home'),
 ]
