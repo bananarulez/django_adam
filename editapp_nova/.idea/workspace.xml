@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d9c335b-a314-4c90-86cd-918ef4c92d4f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/zaloha/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aplikace/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplikace/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aplikace/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplikace/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aplikace/templates/show_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/aplikace/templates/show_data.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aplikace/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/aplikace/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viskalia/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/viskalia/settings.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1nYnAx4NIxxYOo4AjwNIBC0pLl9" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\adam\Documents\GitHub\naki-viskalia_nova\editapp\viskalia" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d9c335b-a314-4c90-86cd-918ef4c92d4f" name="Default Changelist" comment="" />
+      <created>1611575751953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1611575751953</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2506" y="198" key="#Inspections" timestamp="1611665631843">
+      <screen x="1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="2506" y="198" key="#Inspections/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611665631843" />
+    <state x="1005" y="277" key="FileChooserDialogImpl" timestamp="1611677444064">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1005" y="277" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@1920.0.1920.1040" timestamp="1611677444064" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611658958015" />
+  </component>
+</project>

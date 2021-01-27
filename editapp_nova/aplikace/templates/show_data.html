@@ -1,0 +1,53 @@
+{% load static %}
+{% block body %}
+<a href="{% url 'home' %}">home</a>
+<div class="post-entry">
+<table class='table'>
+    <thead>
+      <tr>
+          <th>id</th>
+          <th>instituce</th>
+          <th>fond</th>
+          <th>investarni cislo</th>
+          <th>signatura</th>
+          <th>inkrement</th>
+          <th>karton ulozeni</th>
+          <th>lokalita</th>
+          <th>puv cislo</th>
+          <th>cp</th>
+          <th>obec</th>
+          <th>okres</th>
+          <th>file</th>
+          <th>file path</th>
+
+
+      </tr>
+    </thead>
+{% for object in object_list %}
+
+<tr>
+    <td>{{ object.id }}</td>
+    <td>{{ object.instituce }}</td>
+    <td>{{ object.fond }}</td>
+    <td>{{ object.investarni_cislo }}</td>
+    <td>{{ object.signatura }}</td>
+    <td>{{ object.inkrement }}</td>
+    <td>{{ object.karton_ulozeni }}</td>
+    <td>{{ object.lokalita }}</td>
+    <td>{{ object.puv_nazev }}</td>
+    <td>{{ object.cp }}</td>
+    <td>{{ object.obec }}</td>
+    <td>{{ object.okers }}</td>
+    {% if object.file %}
+        <td><td><img src="{{ object.file.url }}"></td></td>
+    {% endif %}
+    <!--<td><img src="media/images/3.jpg"></td>
+    <td><a href={% url 'data_detail' object.pk %}>editovat</a></td>
+    <td><a href={% url 'home' %}>editovat</a></td> -->
+
+</tr>
+{% endfor %}
+</table>
+</div>
+
+{% endblock %}
